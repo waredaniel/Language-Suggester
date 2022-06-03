@@ -57,6 +57,7 @@ $(document).ready(function() {
       score += 15;
     }
     
+    //Scoring
     if (score <40 ) {
        answerText = "Based on your responses you should definitely learn: C#!";
       } else if (score >= 40 && score < 60) {
