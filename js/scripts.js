@@ -14,11 +14,11 @@ $(document).ready(function() {
       score += 5;
     } else if (inputAge > 18 && inputAge <= 30) {
       score += 10;
-    } else if (inputAge > 30 && inputAge <= 100) {
+    } else if (inputAge > 30) {
       score += 15;
     }
     else {
-      score += 0;
+      alert('You Must Enter Your Age!');
     }
     
     //Color
