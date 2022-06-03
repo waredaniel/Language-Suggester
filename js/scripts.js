@@ -18,7 +18,7 @@ $(document).ready(function() {
       score += 15;
     }
     else {
-      alert('You Must Enter Your Age!');
+      alert('You Really Should Enter Your Age For A More Accurate Result!');
     }
     
     //Color
@@ -58,28 +58,16 @@ $(document).ready(function() {
     }
     
     if (score <40 ) {
-       answerText = "Learn C-Sharp!";
+       answerText = "Based on your responses you should definitely learn: C#!";
       } else if (score >= 40 && score < 60) {
-        answerText = "Learn JavaScript!";
+        answerText = "Based on your responses you should definitely learn: JavaScript!";
       } else if (score >= 60) {
-       answerText = "Learn Python!";
+       answerText = "Based on your responses you should definitely learn: Python!";
       }
 
-    $("#result").show();
+    $("#result").fadeIn();
     $("#result").text(answerText);
 
-
-
-
-    //Score Results
-    // if (score <40 ) {
-    //   $('#C-Sharp').show();
-    // } else if (score >= 40 && score < 60) {
-    //   $('#Javascript').show();
-    // } else if (score >= 60) {
-    //   $('#Python').show();
-    // }
-    
     event.preventDefault();
   });
 });
