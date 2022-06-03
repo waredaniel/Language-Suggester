@@ -4,6 +4,9 @@ $(document).ready(function() {
     
     const inputAge = parseInt($("#age").val());
     const inputColor = parseInt($("input:radio[name=color]:checked").val());
+    const inputAnimal = parseInt($("input:radio[name=animal]:checked").val());
+    const inputTime = parseInt($("input:radio[name=time]:checked").val());
+    const inputPlanet = parseInt($("input:radio[name=planet]:checked").val());
 
     let score = 0
 
@@ -19,7 +22,7 @@ $(document).ready(function() {
        score += 0;
     }
 
-     //Color
+    //Color
      if (inputColor === 1) {
        score +=5;
      } else if (inputColor === 2) {
@@ -28,12 +31,39 @@ $(document).ready(function() {
        score += 15;
      }
 
+    //Animal
+     if (inputAnimal === 1) {
+      score +=5;
+    } else if (inputAnimal === 2) {
+      score += 10;
+    } else {
+      score += 15;
+    }
 
-    if (score <=10 ) {
+    //Time
+    if (inputTime === 1) {
+      score +=5;
+    } else if (inputTime === 2) {
+      score += 10;
+    } else {
+      score += 15;
+    }
+
+    //Planet
+    if (inputPlanet === 1) {
+      score +=5;
+    } else if (inputPlanet === 2) {
+      score += 10;
+    } else {
+      score += 15;
+    }
+    
+    //Score Results
+    if (score <=25 ) {
       $('#C-Sharp').show();
-    } else if (score > 10 && score <= 20) {
+    } else if (score > 25 && score <= 50) {
       $('#Javascript').show();
-    } else if (score > 20) {
+    } else if (score > 50) {
       $('#Python').show();
     }
 
