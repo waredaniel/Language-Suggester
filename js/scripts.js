@@ -18,7 +18,7 @@ $(document).ready(function() {
       score += 15;
     }
     else {
-      alert('You Really Should Enter Your Age For A More Accurate Result!');
+      alert('You really should enter your age for a more accurate result!');
     }
     
     //Color
