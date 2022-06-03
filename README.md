@@ -13,10 +13,14 @@ https://github.com/waredaniel/Language-Suggester
 HTML5, CSS, Bootstrap, Javascript, jQuery 3.6.0
 
 ## Application Setup
-Clone repository to your desktop. Navigate to 'Language-Suggestor' folder. Open the index.html file in your web browser.
+
+1. Clone repository to your desktop. 
+2. Navigate to 'Language-Suggestor' folder. 
+3. Open the index.html file in your web browser.
 
 ## GitHub Site
 
+https://waredaniel.github.io/Language-Suggester
 
 ## Known Bugs
 None
